@@ -6,9 +6,10 @@ function JSONreader(filename, callback){
 		throw err;
 	}
 	var parsedJSON = JSON.parse(data);
-	});
 
 	callback(parsedJSON);
+	});
+
 }
 
 module.exports = {
